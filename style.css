@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500&family=Manrope:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    background-color: #121725;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #54E6AF;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 26px 0;
+
+
+}
+
+h1 span {
+    color: #FFFFFF;
+}
+
+.container .par {
+    font-size: 15px;
+    color: #C2CBE5;
+    font-weight: 400;
+    margin-bottom: 34px;
+
+}
+
+.flex {
+    margin: 34px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+
+    margin: 0 auto 74px;
+    display: block;
+}
+
+
+
+.flex .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex .icons img {
+    width: 20%;
+    opacity: .5;
+}
+
+.flex .error {
+
+    color: red;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-top: 51px;
+}
+
+form #email {
+
+    padding: 9px 32px;
+    border: none;
+    border-radius: 28px;
+    background: #2C344B;
+    width: 327px;
+    height: 46px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+form #submit {
+
+    padding: 9px 32px;
+    border: none;
+    border-radius: 28px;
+    background: #54E6AF;
+    width: 327px;
+    height: 46px;
+    color: #121725;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+@media (min-width:375px) {
+
+    body {
+        padding: 50px 15px;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: url(./assets/mobile/image-host.jpg);
+        z-index: -1;
+        opacity: 0.2;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width:768px) {
+
+    body {
+        padding: 50px 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        padding: 50px 20px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    body::after {
+        content: '';
+        width: 232px;
+        height: 104px;
+        flex-shrink: 0;
+        background-image: url(./assets/desktop/bg-pattern-dots.svg);
+        display: block;
+
+    }
+
+
+    body::before {
+        top: 0;
+        left: 40%;
+        right: 0;
+        opacity: 1;
+        background-image: url(./assets/tablet/image-host.jpg);
+    }
+
+    .content {
+        background-color: #121725;
+        padding-top: 90px;
+        margin: 80px 90px 0px 0px;
+    }
+
+    .logo {
+        width: 20%;
+        margin: 0;
+        position: relative;
+        bottom: 105px;
+    }
+
+    .content .par {
+        width: 60%;
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+
+    form {
+        position: relative;
+        width: 75%;
+
+    }
+
+    form #submit {
+        position: absolute;
+        top: 0;
+        left: 60%;
+        right: 0;
+        width: 40%;
+    }
+
+    .flex .icons {
+        order: 1;
+        justify-content: space-around;
+    }
+
+    .flex .icons img {
+        width: 17%;
+        opacity: .5;
+    }
+}
+
+@media (min-width:1440px) {
+
+    body {
+        padding: 130px 160px;
+    }
+
+    body::before {
+
+        background-image: url(./assets/desktop/image-host.jpg);
+        top: 130px;
+        left: 40%;
+        right: -10%;
+    }
+
+    body::after {
+        position: absolute;
+        top: 80%;
+        right: 0;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 62px;
+        text-align: start;
+
+    }
+
+    form {
+        width: 427px;
+    }
+}
